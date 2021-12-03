@@ -47,6 +47,27 @@ h1, h2 {
   padding: 60px 0;
 }
 
+h3 {
+  margin-bottom: 0;
+}
+
+.item-details h3 + p {
+  font-style: italic;
+}
+
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
 /* Profile */
 header {
   background: #2f3061;
@@ -95,8 +116,24 @@ header {
   background: #a1c6d7;
 }
 
-/* Education */
+.job-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
 
+}
+
+/* Education */
+.education {
+  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+}
+
+.education p {
+  width: 60%;
+}
 
 /* Contact Info */
 footer {
